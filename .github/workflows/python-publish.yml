@@ -19,6 +19,6 @@ jobs:
 
 promotions:
   - name: Deploy to Heroku
-    pipeline_file: deploy-heroku.yml
+    run: echo Is button there now?
     auto_promote_on:
       - result: passed

@@ -17,7 +17,7 @@ jobs:
     - name : Deploy Step
       run : echo wait a sec deploying in action
 
-  publish:
-    needs: [build]
-    steps:
-    - uses: actions/checkout@v1
+    publish:
+      needs: [build]
+      steps:
+      - uses: actions/checkout@v1

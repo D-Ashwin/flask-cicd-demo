@@ -16,8 +16,3 @@ jobs:
         python-version: 3.7
     - name : Deploy Step
       run : echo wait a sec deploying in action
-
-    publish:
-      needs: [build]
-      steps:
-      - uses: actions/checkout@v1

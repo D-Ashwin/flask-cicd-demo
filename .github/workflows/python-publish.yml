@@ -17,8 +17,7 @@ jobs:
     - name : Deploy Step
       run : echo wait a sec deploying in action
 
-promotions:
-  - name: Deploy to Heroku
-    run: echo Is button there now?
-    auto_promote_on:
-      - result: passed
+  publish:
+    needs: [build]
+    steps:
+    - uses: actions/checkout@v1

@@ -16,3 +16,5 @@ jobs:
         python-version: 3.7
     - name : Deploy Step
       run : echo wait a sec deploying in action
+      run : echo Docker user:pass - {{HEROKU_USERNAME}}
+      

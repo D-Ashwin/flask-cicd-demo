@@ -1,9 +1,12 @@
 name: Pipeline
 
-on: [push]
+on:
+  push:
+    branches: [ deployment ]
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
     - name: Pull the docker image
       run: echo TESTTTTTt YAy!!!!
@@ -22,3 +25,4 @@ jobs:
       run: |
         echo pull the docker image
         echo test, and deploy flask here
+

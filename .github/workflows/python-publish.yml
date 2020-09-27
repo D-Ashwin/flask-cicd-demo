@@ -15,7 +15,7 @@ jobs:
         echo pull the docker image
         echo test, and deploy flask here
 
-
+    runs-on: ubuntu-latest
     - step:
       name: Prod Environment
       trigger: manual

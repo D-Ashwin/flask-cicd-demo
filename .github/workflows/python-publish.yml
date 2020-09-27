@@ -18,4 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies
-    - run: echo deploy
+      run: echo deploy

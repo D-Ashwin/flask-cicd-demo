@@ -18,4 +18,5 @@ jobs:
         echo test, and deploy flask here
     - name: Dsds
       id: deploy
+      run: echo deployment started
 

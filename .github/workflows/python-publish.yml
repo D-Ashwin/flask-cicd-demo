@@ -13,8 +13,5 @@ jobs:
       run: echo Testing Done!!!!
 
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to Heroku
-      id: deploy
-      run: echo deployment Done!
+    container:
+        image: dash33/python-hello-world:latest

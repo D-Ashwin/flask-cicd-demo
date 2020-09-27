@@ -20,3 +20,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install dependencies
       run: echo deploy
+      run: git push heroku deployment:main

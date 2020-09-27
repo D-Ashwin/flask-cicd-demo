@@ -17,6 +17,11 @@ jobs:
     container:
         image: dash33/python-hello-world:latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Push to heroku
-      run: git push heroku deployment:main
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.5.6 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "hello-flaskdas" #Must be unique in Heroku
+          heroku_email: "ashwinmathew33@gmail.com"
+          usedocker: true
+          branch: "deployment"

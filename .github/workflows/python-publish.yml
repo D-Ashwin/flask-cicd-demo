@@ -18,6 +18,5 @@ jobs:
         image: dash33/python-hello-world:latest
     steps:
     - uses: actions/checkout@v1
-    - name: Install dependencies
-      run: echo deploy
+    - name: Push to heroku
       run: git push heroku deployment:main

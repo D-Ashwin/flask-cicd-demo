@@ -11,3 +11,14 @@ jobs:
       run: |
         echo pull the docker image
         echo test, and deploy flask here
+
+
+    - step:
+      name: Prod Environment
+      trigger: manual
+    - name: Pull the docker image
+      run: echo For Prod Push!!!!
+    - name: Run a multi-line script
+      run: |
+        echo pull the docker image
+        echo test, and deploy flask here

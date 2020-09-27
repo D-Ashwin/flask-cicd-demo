@@ -5,18 +5,16 @@ on:
     branches: [ deployment ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-    - name: Pull the docker image
-      id: pull_dockerid
-      run: echo TESTTTTTt YAy!!!!
-    - name: Run a multi-line script
-      id: run_tests
-      run: |
-        echo pull the docker image
-        echo test, and deploy flask here
-    - name: Dsds
-      id: deploy
-      run: echo deployment started
+    - name: Running Tests
+      id: tests
+      run: echo Testing Done!!!!
 
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Heroku
+      id: deploy
+      run: echo deployment Done!

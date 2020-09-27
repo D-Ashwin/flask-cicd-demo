@@ -12,9 +12,9 @@ jobs:
       id: tests
       run: echo Testing Done!.!!!
 
-  deploy:
+  build:
     container:
-        image: dash33/python-hello-world:latest
+image: dash33/python-hello-world:latest
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies

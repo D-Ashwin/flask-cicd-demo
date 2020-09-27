@@ -13,8 +13,9 @@ jobs:
       run: echo Testing Done!.!!!
 
   build:
+    runs-on: ubuntu-latest
     container:
-image: dash33/python-hello-world:latest
+        image: dash33/python-hello-world:latest
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies

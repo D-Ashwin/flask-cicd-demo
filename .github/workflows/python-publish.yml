@@ -15,3 +15,7 @@ jobs:
   deploy:
     container:
         image: dash33/python-hello-world:latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install dependencies
+    - run: echo deploy

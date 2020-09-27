@@ -9,20 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Pull the docker image
+      id: pull_dockerid
       run: echo TESTTTTTt YAy!!!!
     - name: Run a multi-line script
+      id: run_tests
       run: |
         echo pull the docker image
         echo test, and deploy flask here
+    - name: Dsds
+      id: deploy
 
 
-    - step:
-      name: Prod Environment
-      trigger: manual
-    - name: Pull the docker image
-      run: echo For Prod Push!!!!
-    - name: Run a multi-line script
-      run: |
-        echo pull the docker image
-        echo test, and deploy flask here
 
